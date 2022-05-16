@@ -15,13 +15,13 @@
 const path = require('path');
 const fs = require('fs');
 const clc = require('cli-color');
-const calendar = require('../lib/calendar');
+const calendar = require('../lib/calendarGooseCity');
 const bugfree = fs.readFileSync(path.resolve(__dirname, '../lib/bugfree.txt')).toString().split(/\r?\n/);
 
 
 const screenWidth = process.stdout.columns;
 const screenHeight = process.stdout.rows;
-const printWidth = 80;
+const printWidth = 100;
 const printWidthHalf = printWidth / 2;
 const printOffsetLeft = parseInt((screenWidth - printWidth) / 2);
 
@@ -85,7 +85,7 @@ function S5(str) {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-let offsetLeft = '                 ';
+let offsetLeft = '                        ';
 for (let str of bugfree) {
   print(fix(S0(offsetLeft + str), printWidth, S0));
 }

@@ -96,6 +96,7 @@ L(S1(''), S1);
 L(S1(offsetLeft +  '    座位朝向：面向' + clc.xterm(28)(calendar.getDirectionString()) + '写程序，BUG 最少。'), S1);
 L(S1(offsetLeft +  '    今日宜饮：' + calendar.getDrinkString()), S1);
 L(S1(offsetLeft +  '    女神亲近指数：' + clc.xterm(196)(calendar.getStarString())), S1);
+L(S1(offsetLeft +  '    男神亲近指数：' + clc.xterm(196)(calendar.getSecondStarString())), S1);
 L(S1(''), S1);
 
 let lucks = calendar.pickTodaysLuck();
